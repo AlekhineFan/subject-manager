@@ -3,7 +3,7 @@
     public class SubjectState
     {
         public int? SubjectId { get; set; }
-        public string LastVisit { get; private set; }
+        public string LastVisit { get; set; }
         public int Stnr { get; set; }
         public int Atnr { get; set; }
         public int Galant { get; set; }

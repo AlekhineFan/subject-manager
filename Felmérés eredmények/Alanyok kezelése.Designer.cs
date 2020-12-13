@@ -45,13 +45,27 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.numericUpDownNyrt = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMoro = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownBabinski = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSchilder = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownTlre = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMarkolo = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownStnr = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSzopo = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownEjto = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownTlrh = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownGalant = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
             this.numericUpDownAtnr = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -60,39 +74,25 @@
             this.textBoxNotes = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.checkBoxNotesOnly = new System.Windows.Forms.CheckBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDownEjto = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDownSzopo = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMarkolo = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMoro = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownNyrt = new System.Windows.Forms.NumericUpDown();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.numericUpDownSchilder = new System.Windows.Forms.NumericUpDown();
-            this.label17 = new System.Windows.Forms.Label();
-            this.numericUpDownBabinski = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJobb)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNyrt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMoro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBabinski)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSchilder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTlre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarkolo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStnr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSzopo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEjto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTlrh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGalant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAtnr)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEjto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSzopo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarkolo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMoro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNyrt)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSchilder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBabinski)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSave
@@ -277,6 +277,63 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "reflexek";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(294, 262);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(83, 18);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Nystagmus";
+            // 
+            // numericUpDownNyrt
+            // 
+            this.numericUpDownNyrt.Location = new System.Drawing.Point(428, 260);
+            this.numericUpDownNyrt.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownNyrt.Name = "numericUpDownNyrt";
+            this.numericUpDownNyrt.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownNyrt.TabIndex = 15;
+            // 
+            // numericUpDownMoro
+            // 
+            this.numericUpDownMoro.Location = new System.Drawing.Point(428, 218);
+            this.numericUpDownMoro.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownMoro.Name = "numericUpDownMoro";
+            this.numericUpDownMoro.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownMoro.TabIndex = 14;
+            // 
+            // numericUpDownBabinski
+            // 
+            this.numericUpDownBabinski.Location = new System.Drawing.Point(428, 81);
+            this.numericUpDownBabinski.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownBabinski.Name = "numericUpDownBabinski";
+            this.numericUpDownBabinski.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownBabinski.TabIndex = 11;
+            // 
+            // numericUpDownSchilder
+            // 
+            this.numericUpDownSchilder.Location = new System.Drawing.Point(428, 30);
+            this.numericUpDownSchilder.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownSchilder.Name = "numericUpDownSchilder";
+            this.numericUpDownSchilder.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownSchilder.TabIndex = 10;
+            // 
             // numericUpDownTlre
             // 
             this.numericUpDownTlre.Location = new System.Drawing.Point(132, 260);
@@ -289,6 +346,18 @@
             this.numericUpDownTlre.Size = new System.Drawing.Size(88, 24);
             this.numericUpDownTlre.TabIndex = 9;
             // 
+            // numericUpDownMarkolo
+            // 
+            this.numericUpDownMarkolo.Location = new System.Drawing.Point(428, 129);
+            this.numericUpDownMarkolo.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownMarkolo.Name = "numericUpDownMarkolo";
+            this.numericUpDownMarkolo.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownMarkolo.TabIndex = 12;
+            // 
             // numericUpDownStnr
             // 
             this.numericUpDownStnr.Location = new System.Drawing.Point(132, 30);
@@ -300,6 +369,30 @@
             this.numericUpDownStnr.Name = "numericUpDownStnr";
             this.numericUpDownStnr.Size = new System.Drawing.Size(88, 24);
             this.numericUpDownStnr.TabIndex = 4;
+            // 
+            // numericUpDownSzopo
+            // 
+            this.numericUpDownSzopo.Location = new System.Drawing.Point(428, 174);
+            this.numericUpDownSzopo.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownSzopo.Name = "numericUpDownSzopo";
+            this.numericUpDownSzopo.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownSzopo.TabIndex = 13;
+            // 
+            // numericUpDownEjto
+            // 
+            this.numericUpDownEjto.Location = new System.Drawing.Point(132, 214);
+            this.numericUpDownEjto.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.numericUpDownEjto.Name = "numericUpDownEjto";
+            this.numericUpDownEjto.Size = new System.Drawing.Size(88, 24);
+            this.numericUpDownEjto.TabIndex = 8;
             // 
             // numericUpDownTlrh
             // 
@@ -325,6 +418,15 @@
             this.numericUpDownGalant.Size = new System.Drawing.Size(88, 24);
             this.numericUpDownGalant.TabIndex = 6;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(294, 83);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(64, 18);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Babinski";
+            // 
             // numericUpDownAtnr
             // 
             this.numericUpDownAtnr.Location = new System.Drawing.Point(132, 79);
@@ -337,6 +439,24 @@
             this.numericUpDownAtnr.Size = new System.Drawing.Size(88, 24);
             this.numericUpDownAtnr.TabIndex = 5;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(294, 33);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 18);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Schilder";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(294, 220);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 18);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Moro";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -346,6 +466,15 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "TLRE";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(294, 132);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 18);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "markoló";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -354,6 +483,24 @@
             this.label4.Size = new System.Drawing.Size(49, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "STNR";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(294, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 18);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "szopó";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 216);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(77, 18);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "ejtőernyős";
             // 
             // label5
             // 
@@ -398,7 +545,7 @@
             this.groupBox4.Size = new System.Drawing.Size(399, 72);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "utolsó látogatás idpontja";
+            this.groupBox4.Text = "utolsó látogatás időpontja";
             // 
             // textBoxNotes
             // 
@@ -431,153 +578,6 @@
             this.checkBoxNotesOnly.UseVisualStyleBackColor = true;
             this.checkBoxNotesOnly.CheckedChanged += new System.EventHandler(this.CheckBoxNotesOnly_CheckedChanged);
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(7, 216);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(77, 18);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "ejtőernyős";
-            // 
-            // numericUpDownEjto
-            // 
-            this.numericUpDownEjto.Location = new System.Drawing.Point(132, 214);
-            this.numericUpDownEjto.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownEjto.Name = "numericUpDownEjto";
-            this.numericUpDownEjto.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownEjto.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(294, 177);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 18);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Szopó";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(294, 132);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 18);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Markoló";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(294, 220);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 18);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Moro";
-            // 
-            // numericUpDownSzopo
-            // 
-            this.numericUpDownSzopo.Location = new System.Drawing.Point(428, 174);
-            this.numericUpDownSzopo.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownSzopo.Name = "numericUpDownSzopo";
-            this.numericUpDownSzopo.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownSzopo.TabIndex = 13;
-            // 
-            // numericUpDownMarkolo
-            // 
-            this.numericUpDownMarkolo.Location = new System.Drawing.Point(428, 129);
-            this.numericUpDownMarkolo.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownMarkolo.Name = "numericUpDownMarkolo";
-            this.numericUpDownMarkolo.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownMarkolo.TabIndex = 12;
-            // 
-            // numericUpDownMoro
-            // 
-            this.numericUpDownMoro.Location = new System.Drawing.Point(428, 218);
-            this.numericUpDownMoro.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownMoro.Name = "numericUpDownMoro";
-            this.numericUpDownMoro.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownMoro.TabIndex = 14;
-            // 
-            // numericUpDownNyrt
-            // 
-            this.numericUpDownNyrt.Location = new System.Drawing.Point(428, 260);
-            this.numericUpDownNyrt.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownNyrt.Name = "numericUpDownNyrt";
-            this.numericUpDownNyrt.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownNyrt.TabIndex = 15;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(294, 262);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(83, 18);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Nystagmus";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(294, 33);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(61, 18);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Schilder";
-            // 
-            // numericUpDownSchilder
-            // 
-            this.numericUpDownSchilder.Location = new System.Drawing.Point(428, 30);
-            this.numericUpDownSchilder.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownSchilder.Name = "numericUpDownSchilder";
-            this.numericUpDownSchilder.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownSchilder.TabIndex = 10;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(294, 83);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Babinski";
-            // 
-            // numericUpDownBabinski
-            // 
-            this.numericUpDownBabinski.Location = new System.Drawing.Point(428, 81);
-            this.numericUpDownBabinski.Maximum = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.numericUpDownBabinski.Name = "numericUpDownBabinski";
-            this.numericUpDownBabinski.Size = new System.Drawing.Size(88, 24);
-            this.numericUpDownBabinski.TabIndex = 11;
-            // 
             // Alanyok_kezelese
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -606,21 +606,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownJobb)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNyrt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMoro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBabinski)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSchilder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTlre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarkolo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownStnr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSzopo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEjto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTlrh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGalant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAtnr)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEjto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSzopo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarkolo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMoro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNyrt)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSchilder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBabinski)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

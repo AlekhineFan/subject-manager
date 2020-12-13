@@ -68,11 +68,17 @@ namespace Felmérés_eredmények
                 $"ATNR: {selected.Atnr}\n " +
                 $"Galant: {selected.Galant}\n " +
                 $"TLRH: {selected.TlrH}\n " +
+                $"ejtőernyős: {selected.Ejto}\n " +
                 $"TLRE: {selected.TlrE}\n " +
+                $"Schilder: {selected.Schilder}\n " +
+                $"Babinski: {selected.Babinski}\n " +
                 $"Markoló: {selected.Mar}\n " +
                 $"Szopó: {selected.Szo}\n " +
                 $"Moro: {selected.Mor}\n " +
-                $"Nystagmus: {selected.Niszt}", "Részletes eredmény", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                $"Nystagmus: {selected.Niszt}\n " +
+                $"bal agyfélteke: {selected.Left}\n " +
+                $"jobb agyfélteke: {selected.Right}"
+                , "Részletes eredmény", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void CheckBoxEdit_CheckedChanged(object sender, EventArgs e)
@@ -120,7 +126,9 @@ namespace Felmérés_eredmények
                 try
                 {
                     manager.EditSubjectData(Subject);
-                    MessageBox.Show("Új adatok mentése sikeres!", "Sikeres mentés", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    DialogResult result = MessageBox.Show("Új adatok mentése sikeres!", "Sikeres mentés", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (result == DialogResult.OK)
+                        this.Close();
                 }
                 catch (Exception ex)
                 {

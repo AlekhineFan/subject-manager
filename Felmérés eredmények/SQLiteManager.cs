@@ -208,33 +208,53 @@ namespace Felmérés_eredmények
             List<SubjectState> states = new List<SubjectState>();
             Connect();
 
-                command.Parameters.Clear();
-                string query = $"SELECT * FROM SubjectState WHERE SubjectId = {subject.Id}";
-                command = new SQLiteCommand(query, connection);
+            command.Parameters.Clear();
+            string query = $"SELECT * FROM SubjectState WHERE SubjectId = {subject.Id}";
+            command = new SQLiteCommand(query, connection);
 
             using (SQLiteDataReader reader = command.ExecuteReader())
             {
                 while (reader.Read())
                 {
+                    /*int? sid = (int?)reader["SubjectId"];
+                    string lv = reader["LastVisit"].ToString();
+                    int st = (int)reader["Stnr"];
+                    int at = (int)reader["Atnr"];
+                    int gal = (int)reader["Galant"];
+                    int te =  (int)reader["Tlre"];
+                    int th = (int)reader["Tlrh"];
+                    int mar =  (int)reader["Mar"];
+                    int sz = (int)reader["Szo"];
+                    int mo = (int)reader["Mor"];
+                    int l = (int)reader["Left"];
+                    int r = (int)reader["Right"];
+                    int n = (int)reader["Niszt"];
+                    string nt = reader["Note"].ToString();
+                    int e = (int)reader["Ejto"];
+                    int b = (int)reader["Babinski"];
+                    int sch =  (int)reader["Schilder"];*/
+
+
+
                     states.Add(new SubjectState(
-                        reader.GetInt32(0),
-                        reader.GetString(1),
-                        reader.GetInt32(2),
-                        reader.GetInt32(3),
-                        reader.GetInt32(4),
-                        reader.GetInt32(5),
-                        reader.GetInt32(6),
-                        reader.GetInt32(7),
-                        reader.GetInt32(8),
-                        reader.GetInt32(9),
-                        reader.GetInt32(10),
-                        reader.GetInt32(11),
-                        reader.GetInt32(12),
-                        reader.GetString(13),
-                        reader.GetInt32(14),
-                        reader.GetInt32(15),
-                        reader.GetInt32(16)
-                        ));
+                       reader.GetInt32(14),
+                       reader.GetString(1),
+                       reader.GetInt32(2),
+                       reader.GetInt32(3),
+                       reader.GetInt32(4),
+                       reader.GetInt32(5),
+                       reader.GetInt32(6),
+                       reader.GetInt32(7),
+                       reader.GetInt32(8),
+                       reader.GetInt32(9),
+                       reader.GetInt32(10),
+                       reader.GetInt32(11),
+                       reader.GetInt32(12),
+                       reader.GetString(13),
+                       reader.GetInt32(15),
+                       reader.GetInt32(16),
+                       reader.GetInt32(17)
+                       ));
                 }
             }
             CloseConnection();
@@ -282,7 +302,7 @@ namespace Felmérés_eredmények
 
 
                             subjects.LastOrDefault().SubjectStates.Add(new SubjectState(
-                                reader.GetInt32(4),
+                                reader.GetInt32(18),
                                 reader.GetString(5),
                                 reader.GetInt32(6),
                                 reader.GetInt32(7),
@@ -296,32 +316,32 @@ namespace Felmérés_eredmények
                                 reader.GetInt32(15),
                                 reader.GetInt32(16),
                                 reader.GetString(17),
-                                reader.GetInt32(18),
                                 reader.GetInt32(19),
-                                reader.GetInt32(20)
+                                reader.GetInt32(20),
+                                reader.GetInt32(21)
                                 ));
                         }
                         else
                         {
                             subjects.LastOrDefault().SubjectStates.Add(new SubjectState(
-                                 reader.GetInt32(4),
-                                 reader.GetString(5),
-                                 reader.GetInt32(6),
-                                 reader.GetInt32(7),
-                                 reader.GetInt32(8),
-                                 reader.GetInt32(9),
-                                 reader.GetInt32(10),
-                                 reader.GetInt32(11),
-                                 reader.GetInt32(12),
-                                 reader.GetInt32(13),
-                                 reader.GetInt32(14),
-                                 reader.GetInt32(15),
-                                 reader.GetInt32(16),
-                                 reader.GetString(17),
-                                 reader.GetInt32(18),
-                                 reader.GetInt32(19),
-                                 reader.GetInt32(20)
-                                 ));
+                               reader.GetInt32(18),
+                               reader.GetString(5),
+                               reader.GetInt32(6),
+                               reader.GetInt32(7),
+                               reader.GetInt32(8),
+                               reader.GetInt32(9),
+                               reader.GetInt32(10),
+                               reader.GetInt32(11),
+                               reader.GetInt32(12),
+                               reader.GetInt32(13),
+                               reader.GetInt32(14),
+                               reader.GetInt32(15),
+                               reader.GetInt32(16),
+                               reader.GetString(17),
+                               reader.GetInt32(19),
+                               reader.GetInt32(20),
+                               reader.GetInt32(21)
+                               ));
                         }
                     }
                     reader.Close();

@@ -171,8 +171,9 @@
             // újAlanyToolStripMenuItem
             // 
             this.újAlanyToolStripMenuItem.Name = "újAlanyToolStripMenuItem";
-            this.újAlanyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.újAlanyToolStripMenuItem.Size = new System.Drawing.Size(236, 28);
+            this.újAlanyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.N)));
+            this.újAlanyToolStripMenuItem.Size = new System.Drawing.Size(263, 28);
             this.újAlanyToolStripMenuItem.Text = "Új alany";
             this.újAlanyToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_ClickNewSubject);
             // 
@@ -180,7 +181,7 @@
             // 
             this.DeleteSubjectToolStripMenuItem.Name = "DeleteSubjectToolStripMenuItem";
             this.DeleteSubjectToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.DeleteSubjectToolStripMenuItem.Size = new System.Drawing.Size(236, 28);
+            this.DeleteSubjectToolStripMenuItem.Size = new System.Drawing.Size(263, 28);
             this.DeleteSubjectToolStripMenuItem.Text = "Kijelölt törlése";
             this.DeleteSubjectToolStripMenuItem.Click += new System.EventHandler(this.DeleteSubjectToolStripMenuItem_Click);
             // 
@@ -190,27 +191,34 @@
             this.NewSubjectStateToolStripMenuItem,
             this.eredményTörléseToolStripMenuItem});
             this.eredményToolStripMenuItem.Name = "eredményToolStripMenuItem";
+            this.eredményToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.M)));
             this.eredményToolStripMenuItem.Size = new System.Drawing.Size(195, 27);
             this.eredményToolStripMenuItem.Text = "Eredmények és adatok";
             // 
             // NewSubjectStateToolStripMenuItem
             // 
             this.NewSubjectStateToolStripMenuItem.Name = "NewSubjectStateToolStripMenuItem";
-            this.NewSubjectStateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.NewSubjectStateToolStripMenuItem.Size = new System.Drawing.Size(348, 28);
+            this.NewSubjectStateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.R)));
+            this.NewSubjectStateToolStripMenuItem.Size = new System.Drawing.Size(443, 28);
             this.NewSubjectStateToolStripMenuItem.Text = "Új eredmény, megjegyzés";
             this.NewSubjectStateToolStripMenuItem.Click += new System.EventHandler(this.NewSubjectStateToolStripMenuItem_Click);
             // 
             // eredményTörléseToolStripMenuItem
             // 
             this.eredményTörléseToolStripMenuItem.Name = "eredményTörléseToolStripMenuItem";
-            this.eredményTörléseToolStripMenuItem.Size = new System.Drawing.Size(348, 28);
+            this.eredményTörléseToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.M)));
+            this.eredményTörléseToolStripMenuItem.Size = new System.Drawing.Size(443, 28);
             this.eredményTörléseToolStripMenuItem.Text = "Eredmények és adatok kezelése";
             this.eredményTörléseToolStripMenuItem.Click += new System.EventHandler(this.ManageRecordsToolStripMenuItem_Click);
             // 
             // biztonságiMentésToolStripMenuItem
             // 
             this.biztonságiMentésToolStripMenuItem.Name = "biztonságiMentésToolStripMenuItem";
+            this.biztonságiMentésToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.B)));
             this.biztonságiMentésToolStripMenuItem.Size = new System.Drawing.Size(163, 27);
             this.biztonságiMentésToolStripMenuItem.Text = "Biztonsági mentés";
             this.biztonságiMentésToolStripMenuItem.Click += new System.EventHandler(this.ButtonDbBackup_Click);
@@ -227,7 +235,7 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(1142, 52);
+            this.dataGridView1.Size = new System.Drawing.Size(1142, 0);
             this.dataGridView1.TabIndex = 14;
             // 
             // buttonOrder

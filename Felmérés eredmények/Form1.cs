@@ -162,10 +162,11 @@ namespace Felmérés_eredmények
                     $"markoló: {state.Mar}\n " +
                     $"szopó: {state.Szo}\n " +
                     $"Moro: {state.Mor}\n " +
-                    $"Nyst: {state.Niszt}\n " +
+                    $"Nyst: {state.Niszt}\n\n " +
+                    $"százalékos változás a reflexekben: {ratioDiff}% \n\n " +
                     $"bal agyfélteke: {state.Left}\n " +
-                    $"jobb agyfélteke: {state.Right}\n " +
-                    $"százalékos változás a reflexekben: {ratioDiff}%",  "Utolsó két mérés különbsége", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    $"jobb agyfélteke: {state.Right}\n "
+                    ,"Utolsó két mérés különbsége", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -186,29 +187,35 @@ namespace Felmérés_eredmények
 
         private void ButtonDbBackup_Click(object sender, EventArgs e)
         {
-            string targetPath = "";
-            using (FolderBrowserDialog dialog = new FolderBrowserDialog())
+            try
             {
-                if (dialog.ShowDialog() == DialogResult.OK)
+                string targetPath = "";
+                using (FolderBrowserDialog dialog = new FolderBrowserDialog())
                 {
-                    targetPath = dialog.SelectedPath;
+                    if (dialog.ShowDialog() == DialogResult.OK)
+                    {
+                        targetPath = dialog.SelectedPath;
+                    }
                 }
+
+                if (targetPath == String.Empty || targetPath == "")
+                    return;
+
+                string pathCompatibleDate = new String(DateTime.Now.ToString().ToCharArray().Where(c => c != ':' && c != '/' && c != ' ').ToArray());
+
+                string fileName = "subjects.db";
+                string backupName = pathCompatibleDate + "_backup_subjects.db";
+                string sourcePath = Directory.GetCurrentDirectory();
+                string sourceFile = Path.Combine(sourcePath, fileName);
+                string destinationFile = Path.Combine(targetPath, backupName);
+
+                File.Copy(sourceFile, destinationFile, false);
+                MessageBox.Show("Biztonsági másolat készítése a célmappában sikeres.", "Másolat kész", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-            if (targetPath == String.Empty || targetPath == "")
-                return;
-
-            string pathCompatibleDate = new String(DateTime.Now.ToString().ToCharArray().Where(c => c != ':' && c != '/' && c != ' ').ToArray());
-
-            string fileName = "subjects.db";
-            string backupName = pathCompatibleDate + "_backup_subjects.db";
-            string sourcePath = Directory.GetCurrentDirectory();
-            string sourceFile = Path.Combine(sourcePath, fileName);
-            string destinationFile = Path.Combine(targetPath, backupName);
-
-            File.Copy(sourceFile, destinationFile, false);
-
-            MessageBox.Show("Biztonsági másolat készítése a célmappában sikeres.", "Másolat kész", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            catch (Exception ex)
+            {
+                throw new Exception("Biztonsági másolat készítése sikertelen volt." + ex.Message);
+            }       
         }
     }
 }
